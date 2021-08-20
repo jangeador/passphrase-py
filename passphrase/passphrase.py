@@ -465,7 +465,7 @@ class Passphrase:
 
         # Handle numbers
         for _ in range(0, self.amount_n):
-            passphrase.append(randbetween(MIN_NUM, MAX_NUM))
+            passphrase.append(randbetween(self.randnum_min, self.randnum_max))
 
         self.last_result = passphrase
         return passphrase
